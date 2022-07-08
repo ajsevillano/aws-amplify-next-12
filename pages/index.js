@@ -8,7 +8,7 @@ export default function Home({ breeds = [] }) {
 
   useEffect(() => {
     setBreedList(Object.keys(breeds));
-  }, []);
+  }, [breeds]);
 
   return (
     <div className={styles.container}>
